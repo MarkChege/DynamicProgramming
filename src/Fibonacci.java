@@ -10,6 +10,7 @@ public class Fibonacci {
 	}
 	
 	public int solve(int num){
+		//O(1)
 		if(memoize.containsKey(num)){return memoize.get(num);}
 		else{
 			memoize.put(num-1, solve(num-1));
